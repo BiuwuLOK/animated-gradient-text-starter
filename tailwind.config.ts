@@ -7,5 +7,18 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   plugins: [],
+  theme: {
+    extend: {
+      keyframes: {
+        gradient: {
+          "0%": { backgroundPosition: "0% 50%" },
+          "100%": { backgroundPosition: "200% 0%" },
+        },
+      },
+      animation: {
+        gradient: "gradient 6s ease infinite",
+      },
+    },
+  },
 };
 export default config;
